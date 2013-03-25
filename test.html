@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Brownie</title>
+    <meta name="description" content="">
+    <meta name="author" content="Javier Jiménez Villar (@soyjavi)">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="../../example/components/lungo.brownie/lungo.css">
+    <link rel="stylesheet" href="../../example/components/lungo.brownie/lungo.theme.css" id="theme-stylesheet">
+    <link rel="stylesheet" href="../../example/components/lungo.icon/lungo.icon.css">
+    <link rel="stylesheet" href="lungo.calendar.css">
+</head>
+
+<body>
+
+    <section id="main" data-transition="" data-aside="features" class="drag">
+        <header>
+            <span class="title centered">Title</span>
+            <nav class="right">
+                <a href="#" data-action="twitter" class="button" data-icon="brand twitter" data-article="main-article"></a>
+            </nav>
+        </header>
+
+        <article class="indented">
+            <div>
+                <button class="anchor" data-icon="user" data-label="Show Calendar"></button>
+            </div>
+        </article>
+    </section>
+
+    <div data-control="calendar">
+
+
+        <div class="layout horizontal">
+            <div data-layout="primary">
+                <span class="icon caret-left"></span>
+                <strong>march</strong>
+                <span class="icon caret-right"></span>
+            </div>
+
+            <div data-layout="primary">
+                <span class="icon caret-left"></span>
+                <strong>2013</strong>
+                <span class="icon caret-right"></span>
+            </div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <td>lun</td>
+                    <td>MAR</td>
+                    <td>MIE</td>
+                    <td>JUE</td>
+                    <td>VIE</td>
+                    <td>SAB</td>
+                    <td>DOM</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="disabled">1</td>
+                    <td class="disabled">2</td>
+                    <td class="disabled">3</td>
+                    <td class="disabled">4</td>
+                    <td class="disabled">5</td>
+                    <td class="disabled">6</td>
+                    <td class="disabled">7</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td class="weekend">6</td>
+                    <td class="weekend">7</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td class="weekend">13</td>
+                    <td class="weekend">14</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td class="weekend">20</td>
+                    <td class="weekend">21</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td class="today">25</td>
+                    <td>26</td>
+                    <td class="weekend">27</td>
+                    <td class="weekend event ">28</td>
+                </tr>
+                <tr>
+                    <td class="event">29</td>
+                    <td class="event">30</td>
+                    <td class="event">31</td>
+                    <td class="disabled">1</td>
+                    <td class="disabled">2</td>
+                    <td class="disabled">3</td>
+                    <td class="disabled">4</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+
+    <!-- Lungo dependencies -->
+    <script src="../../example/components/quojs/quo.js"></script>
+    <script src="../../example/components/lungo.brownie/lungo.debug.js"></script>
+    <script src="lungo.calendar.js"></script>
+    <!-- LungoJS - Sandbox App -->
+    <script>
+        Lungo.init({
+            name: 'Kitchen Sink',
+            version: '2.1.0222',
+            history: false
+        });
+
+        Lungo.ready(function() {
+            console.error(Lungo.Sugar);
+        });
+    </script>
+</body>
+</html>
