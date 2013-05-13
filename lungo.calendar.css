@@ -1,9 +1,11 @@
-[data-control=calendar]{position:absolute;top:128px;left:20px;z-index:5 !important;width:280px;display:block;font-size:17px;margin:0 auto;}
+[data-control=calendar]{-webkit-transition-property:margin-top;-moz-transition-property:margin-top;-ms-transition-property:margin-top;-o-transition-property:margin-top;transition-property:margin-top;-webkit-transition-duration:400ms;-moz-transition-duration:400ms;-ms-transition-duration:400ms;-o-transition-duration:400ms;transition-duration:400ms;-webkit-transition-timing-function:easeInCubic;-moz-transition-timing-function:easeInCubic;-ms-transition-timing-function:easeInCubic;-o-transition-timing-function:easeInCubic;transition-timing-function:easeInCubic;position:absolute;display:block;margin-top:-350px;left:20px;z-index:1999 !important;width:280px;font-size:15px;}
+[data-control=calendar].show{margin-top:50px}
+[data-control=calendar] span[data-action]{display:inline-block;width:20px}
+[data-control=calendar] strong{display:inline-block;width:80px}
 [data-control=calendar] table{background:#fff;}
 [data-control=calendar] table thead,[data-control=calendar] table tbody,[data-control=calendar] table tr{display:block;width:inherit}
 [data-control=calendar] table thead td{font-weight:700;font-size:11px;line-height:24px;border:0}
 [data-control=calendar] table td{width:40px;line-height:40px;text-align:center;font-weight:600;position:relative;border:solid 1px #eee;}
-[data-control=calendar] table td:hover{background:#008000;border:0}
 [data-control=calendar] table td.today{background:#00f;color:#fff !important;border:0}
 [data-control=calendar] table td.weekend{color:#f00}
 [data-control=calendar] table td.event:after{position:absolute;content:"·";position:#f00;top:12px;left:15px;font-size:28px;color:#f00}
